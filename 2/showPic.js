@@ -1,3 +1,19 @@
+
+
+function addLoaEvent(func) {
+    var oldonload = window.onload;
+    if (typeof window.onload != 'function') {
+        window.onload = func;
+    }else {
+        window.onload = function () {
+            onload();
+            func();
+        }
+    }
+}
+
+
+
 //检验函数
 function prepareGallery() {
     if (!document.getElementsByTagName) return false;
