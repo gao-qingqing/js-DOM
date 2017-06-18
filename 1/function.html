@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button style="width: 50px;height:20px;border-radius: 5px;" onclick="shout();">点击1</button>
+<!--<button style="width: 50px;height:20px;border-radius: 5px;" onclick=" multiply(10, 2);">点击2</button>-->
+<!--<button style="width: 50px;height:20px;border-radius: 5px;" onclick=" multiply(23, 2);">点击3</button>-->
+<div id="round-num"></div>
+<!--获取和设置属性测试-->
+<p title="a gent reminder">你好</p>
+<p title="dewdewdew">你好132</p>
+<p >this is just a test</p>
+<script>
+    function shout() {
+        var beatles = Array("yjimm","12ddsc","hdhah","1ddsa");
+        for (var count = 0; count<beatles.length; count++){
+            alert(beatles[count]);
+        }
+    }
+//    shout();
+
+//    function multiply(num1,num2) {
+//        var total = num1 * num2;
+//        alert(total);
+//    }
+//    multiply(10, 2);
+
+    function multiply(num1,num2) {
+        var total = num1 * num2;
+        return total;
+    }
+//   var temp1= multiply(23, 2);
+//   alert(temp1);
+
+//    Math  中的round方法可以把十进制数值舍入为一个最接近的整数
+//    var num = 7.561;
+//    var num = Math.round(num);
+//    document.getElementById('round-num');
+//    alert(num);
+//
+////    三种获取DOM元素的方法。
+//    document.getElementById();
+//    document.getElementsByTagName();
+//    document.getElementsByClassName();
+////    但是getElementsByClassName只支持新的浏览器，下面函数适用于老的浏览器
+//            function getElementByClassName(node, classname) {
+//                if(node.getElementByClassName){
+//            //        使用现有的方法
+//                    return node.getElementByClassName(classname);
+//                }else{
+//                    var results = new Array();
+//                    var elems = node.getElementsByTagName("*");
+//                    for(var i=0;i<elems.length;i++){
+//                        if(elems[i].className.indexOf(classname) != -1){
+//                            results[results.length] = elems[i];
+//                        }
+//                    }
+//                    return results;
+//                }
+//            }
+
+//    获取和设置属性
+//    var paras = document.getElementsByTagName("p");
+//    for (var i=0; i<paras.length; i++){
+//        var title_text = paras[i].getAttribute("title");
+//        if (title_text != null){
+//            alert(title_text );
+//        }
+//    }
+//    修改属性节点的值
+//    document.setAttribute("attribute","value")
+
+</script>
+</body>
+</html>
