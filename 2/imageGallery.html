@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片库优化</title>
+    <style TYPE="text/css">
+        body {
+             font-family: "Helvetica","Arial",Serif;
+            color: #333;
+            background-color: #ccc;
+            margin: 1em 10%;
+        }
+        h1 {
+            color: #333;
+            background-color: transparent;
+        }
+        a {
+            color: #c60;
+            background-color: transparent;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        ul {
+            padding: 0;
+        }
+        li {
+            float: left;
+            padding: 1em;
+            list-style: none;
+        }
+        img {
+            display: block;
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Snapshts</h1>
+<ul id="imageGallery">
+    <li>
+        <a href="img/bg.jpg" title="bg" >img11</a>
+    </li>
+    <li>
+        <a href="img/dots.png" title="dots" >img22</a>
+    </li>
+    <li>
+        <a href="img/glyphicons-halflings.png" title="glyphicons-halflings" >img33</a>
+    </li>
+    <li>
+        <a href="img/glyphicons-halflings-white.png" title="glyphicons-halflings-white">img44</a>
+    </li>
+</ul>
+<!--占位符图片-->
+<img id="logo" src="" alt="" />
+<!--不用占位符-->
+<p id="description">  </p>
+<script type="text/javascript" src="showPic.js"></script>
+</body>
+</html>
